@@ -1,9 +1,11 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
     public static void main(String[] args) {
 
-        int hiddenNumber = 32;
+        Random rnd = new Random();
+        int hiddenNumber = rnd.nextInt(100);
         Scanner sc = new Scanner(System.in);
 
         while (true){
@@ -19,6 +21,5 @@ public class Game {
                 break;
             }
         }
-
     }
 }
